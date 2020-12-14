@@ -6,7 +6,7 @@ arch:
 services:
   - docker
 install: wget https://raw.githubusercontent.com/ocaml/ocaml-travisci-skeleton/master/.travis-docker.sh
-script: bash ./.travis-docker.sh
+script: bash -x ./.travis-docker.sh
 env:
  global:
    - PINS="sha:."
